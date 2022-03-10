@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="561.0" style="-fx-background-color: linear-gradient(to right, #6ce3e3, #00c6e4, #00a7e4, #0086dd, #0060c8);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="project_krypton.Sym_DeController">
+     <children>
+      <Label layoutX="187.0" layoutY="14.0" text="Symmetric Decryption" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <TextField fx:id="text1" layoutX="16.0" layoutY="103.0" prefHeight="28.0" prefWidth="532.0" promptText="Save your Key to Decrypt The text" />
+      <Label layoutX="16.0" layoutY="74.0" prefHeight="21.0" prefWidth="183.0" text="Enter Your Key :">
+         
+      </Label>
+      <Label layoutX="14.0" layoutY="144.0" prefHeight="21.0" prefWidth="183.0" text="Enter Encrypted Text  :">
+         
+      </Label>
+      <TextArea fx:id="textarea1" layoutX="14.0" layoutY="165.0" prefHeight="90.0" prefWidth="532.0" wrapText="true" />
+      <Label layoutX="16.0" layoutY="332.0" prefHeight="21.0" prefWidth="183.0" text="Decrypted Text  :">
+        
+      </Label>
+      <TextArea fx:id="textarea2" editable="false" layoutX="16.0" layoutY="353.0" prefHeight="90.0" prefWidth="532.0" wrapText="true" />
+      <Button layoutX="236.0" layoutY="277.0" mnemonicParsing="false" onAction="#De" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15;" text="Decrypt" textFill="WHITE">
+        
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

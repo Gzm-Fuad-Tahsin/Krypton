@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_krypton.File_EnController">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="603.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/gradienta-LeG68PrXA6Y-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="text1" layoutX="86.0" layoutY="216.0" prefHeight="25.0" prefWidth="311.0" />
+      <Button layoutX="463.0" layoutY="216.0" mnemonicParsing="false" onAction="#file_chose" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10;" text="File Choose">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="281.0" layoutY="282.0" mnemonicParsing="false" onAction="#En" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10;" text="Encrpyed">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="text2" layoutX="207.0" layoutY="140.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="37.0" layoutY="144.0" text="Enter Key To Encrypt" />
+      <Label layoutX="263.0" layoutY="29.0" prefHeight="25.0" prefWidth="101.0" text="File Encrption" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label fx:id="label1" layoutX="179.0" layoutY="92.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
